@@ -9,5 +9,5 @@
   ![图片说明](images/打开仓库(1).jpg)
   - 打开`Git Bash Here`后，输入`git clone 仓库地址`，按回车键
   ![图片说明](images/打开仓库(2).jpg)
-  - 仓库可隆成功后通过VS Code打开
+  - 仓库克隆成功后通过VS Code打开
   ![图片说明](images/打开仓库(3).jpg)
