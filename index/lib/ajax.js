@@ -1,5 +1,4 @@
 // ajax请求后端数据的公用js
-// ajax请求后端数据的公用js
 // 依赖axios和qs这两个第三方js库
 
 // =====================================
@@ -20,7 +19,7 @@ function loadToken() {
 //======================================
 
 // 定义服务器基本地址信息
-const SERVER_BASE = 'https://huhuiyu.top/teach_project_service';
+const SERVER_BASE = 'https://service.huhuiyu.top';
 // 1：请求地址，2：请求的参数（json）
 // 3：请求的结果处理function，4：请求的方式
 function ajax(url, params, callback, method) {
@@ -33,7 +32,7 @@ function ajax(url, params, callback, method) {
   });
   // 默认mothod参数可以不传入，为post
   method = method ? method : 'post';
-  console.log('ajax请求信息：', url, info, method);
+  console.log('ajax请求信息:', url, info, method);
   // 发起ajax请求
   axios({
     // 请求地址
@@ -55,7 +54,7 @@ function ajax(url, params, callback, method) {
       callback(resp.data);
     })
     .catch((err) => {
-      console.error('ajax错误原因：', err);
+      console.error('ajax错误原因:', err);
       // 错误就伪造一个标准错误应答json信息回调
       callback({
         code: 500,
