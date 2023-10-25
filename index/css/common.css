@@ -1,0 +1,26 @@
+body {
+  margin: 0px;
+}
+
+/* 文字(英文和数字)强制断行 */
+* {
+  word-break: break-all;
+}
+
+/* 所有的div盒子高宽大小都是包括边框的大小 */
+div {
+  box-sizing: border-box;
+}
+
+/* 文本对齐的公用样式 */
+.tc {
+  text-align: center;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
