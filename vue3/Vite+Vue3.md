@@ -240,19 +240,19 @@
   - 内容为以下代码：
 
     ```vue
-            <template>
-          <ElConfigProvider :locale="zhCn">
-            <RouterView></RouterView>
-          </ElConfigProvider>
-        </template>
+      <template>
+        <ElConfigProvider :locale="zhCn">
+          <RouterView></RouterView>
+        </ElConfigProvider>
+      </template>
 
-        <script setup lang="ts">
-        import { ElConfigProvider } from 'element-plus'
-        import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
-        </script>
+      <script setup lang="ts">
+      import { ElConfigProvider } from 'element-plus'
+      import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
+      </script>
 
-        <style scoped></style>
-      ```
+      <style scoped></style>
+    ```
 
 - 控制的执行`npm run dev`启动项目
   - 默认看到的是`Home.vue`的内容
